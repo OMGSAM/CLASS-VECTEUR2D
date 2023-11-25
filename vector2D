@@ -10,18 +10,23 @@ class vecteur2d() :
         print(" le ordone  est : " , self.ordone)
     def norme(self) :
         return (self.absise**2) +(self.ordone**2)**(1/2)
-    def equals(self,W)  
-        if  self.absise==W.absise and  self.ordone==W.ordone
-        return True 
-        else
-        return False
+    def equals(self,W) :  
+        if  (self.absise==W.absise) and  (self.ordone==W.ordone) :
+         return True
+        else :
+         return False
+     def tostring(self) :
+         print( "X=",self.absise,"-Y=",self.ordone )
         
          
+     
         
-    def tostring(self) :
-        return str(self.absise)+"/"+ str(self.ordone)+"/"
         
-        a=vecteur2d(20,80) 
-        a.info()
-        print(a.norme())
-        print(a.tostring())
+a=vecteur2d(20,60) 
+b=vecteur2d(20,60) 
+
+a.info()
+print("la norme est : ",a.norme())
+print("LES 2 VECTS SONT EGALS ? ",a.equals(b))
+a.tostring()
+
