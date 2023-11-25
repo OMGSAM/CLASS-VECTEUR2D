@@ -17,6 +17,11 @@ class vecteur2d() :
          return False
      def tostring(self) :
          print( "X=",self.absise,"-Y=",self.ordone )
+
+print("PARTIE VECTEUR 3 DIMENSION ")
+
+
+
         
          
      
@@ -40,6 +45,10 @@ class vecteur3d(vecteur2d) :
         print("le absise est :" , self.absise)
         print("le ordone  est :" , self.ordone) 
         print("le Z  est :" , self.z) 
+     def norm(self) :
+            return ((self.absise**2) +(self.ordone**2) +(self.z**2))**(1/2)
 X=vecteur3d(11,22,43)       
 X.infoz()
+print("la norme DU VECT 3 DIMENSION",O.norm())
+
 
