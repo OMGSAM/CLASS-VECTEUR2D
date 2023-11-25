@@ -30,3 +30,16 @@ print("la norme est : ",a.norme())
 print("LES 2 VECTS SONT EGALS ? ",a.equals(b))
 a.tostring()
 
+
+class vecteur3d(vecteur2d) : 
+    def __init__(self,x,y,z) :
+        self.absise= x
+        self.ordone= y
+        self.z=z
+    def infoz(self) :
+        print("le absise est :" , self.absise)
+        print("le ordone  est :" , self.ordone) 
+        print("le Z  est :" , self.z) 
+X=vecteur3d(11,22,43)       
+X.infoz()
+
