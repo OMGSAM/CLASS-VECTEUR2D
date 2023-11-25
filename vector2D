@@ -16,16 +16,7 @@ class vecteur2d() :
         else :
          return False
      def tostring(self) :
-         print( "X=",self.absise,"-Y=",self.ordone )
-
-print("PARTIE VECTEUR 3 DIMENSION ")
-
-
-
-        
-         
-     
-        
+         print( "X=",self.absise,"-Y=",self.ordone )     
         
 a=vecteur2d(20,60) 
 b=vecteur2d(20,60) 
@@ -35,6 +26,9 @@ print("la norme est : ",a.norme())
 print("LES 2 VECTS SONT EGALS ? ",a.equals(b))
 a.tostring()
 
+//////////
+print("PARTIE VECTEUR 3 DIMENSION ")
+/////////
 
 class vecteur3d(vecteur2d) : 
     def __init__(self,x,y,z) :
@@ -47,6 +41,13 @@ class vecteur3d(vecteur2d) :
         print("le Z  est :" , self.z) 
      def norm(self) :
             return ((self.absise**2) +(self.ordone**2) +(self.z**2))**(1/2)
+     def equal(self,W) :  
+        if  (self.absise==W.absise) and  (self.ordone==W.ordone) and (self.z==W.z):
+         return True
+        else :
+         return False
+    def string(self) :
+         print( "X=",self.absise,"-Y=",self.ordone ,"+Z=",self.z)     
 X=vecteur3d(11,22,43)       
 X.infoz()
 print("la norme DU VECT 3 DIMENSION",O.norm())
