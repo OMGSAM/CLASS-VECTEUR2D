@@ -48,8 +48,10 @@ class vecteur3d(vecteur2d) :
          return False
     def string(self) :
          print( "X=",self.absise,"-Y=",self.ordone ,"+Z=",self.z)     
-X=vecteur3d(11,22,43)       
+X=vecteur3d(11,22,43) 
+Z=vecteur3d(11,22,43)       
+
 X.infoz()
-print("la norme DU VECT 3 DIMENSION",O.norm())
-
-
+print("la norme DU VECT 3 DIMENSION :",X.norm())
+print("les 2 VECTS EGAUX ? ", X.equal(Z))
+        
